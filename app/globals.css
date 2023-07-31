@@ -18,10 +18,37 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.language_container {
+  width: 600px;
+  height: auto;
+}
+
+
+.splide__container .splide__list .country_image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.splide__slide img {
+  transform: scale(0.6);
+}
+
+/* Active slide */
+.splide__slide.is-active img {
+  transform: scale(1);
+  padding: 2px;
+  outline: 1px solid rgb(72, 144, 239);
+}
+
+/* Previous and Next slides */
+.splide__slide.is-prev img,
+.splide__slide.is-next img {
+  transform: scale(0.8);
 }

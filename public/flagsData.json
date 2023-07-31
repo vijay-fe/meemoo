@@ -1,0 +1,80 @@
+[
+    {
+        "id": "1",
+        "name": "India",
+        "image": "./flags/india.webp",
+        "language": "Hindi"
+    },
+    {
+        "id": "2",
+        "name": "Albania",
+        "image": "./flags/albania.png",
+        "language": "Albanian"
+    },
+    {
+        "id": "3",
+        "name": "Austria",
+        "image": "./flags/austria.png",
+        "language": "German"
+    },
+    {
+        "id": "4",
+        "name": "Bangladesh",
+        "image": "./flags/bangladesh.png",
+        "language": "Bengali"
+    },
+    {
+        "id": "5",
+        "name": "Brazil",
+        "image": "./flags/brazil.webp",
+        "language": "Portuguese"
+    },
+    {
+        "id": "6",
+        "name": "China",
+        "image": "./flags/china.webp",
+        "language": "Chinese"
+    },
+    {
+        "id": "7",
+        "name": "Ezypt",
+        "image": "./flags/egipt.webp",
+        "language": "Arabic"
+    },
+    {
+        "id": "8",
+        "name": "Germany",
+        "image": "./flags/germany.webp",
+        "language": "German"
+    },
+    {
+        "id": "9",
+        "name": "Hong-Kong",
+        "image": "./flags/hong-kong.webp",
+        "language": "Chinese"
+    },
+    {
+        "id": "10",
+        "name": "Iran",
+        "image": "./flags/iran.webp",
+        "language": "Persian"
+    },
+    {
+        "id": "11",
+        "name": "Israel",
+        "image": "./flags/israel.webp",
+        "language": "Hebrew"
+    },
+    {
+        "id": "12",
+        "name": "Italy",
+        "image": "./flags/italy.png",
+        "language": "Italian"
+    },
+    {
+        "id": "13",
+        "name": "Japan",
+        "image": "./flags/japan.webp",
+        "language": "Japanese"
+    }
+]

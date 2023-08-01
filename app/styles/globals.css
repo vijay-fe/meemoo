@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.language_container {
+  width: 600px;
+  height: auto;
+}
+
+
+.splide__container .splide__list .country_image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .language_container {
+    width: 360px;
+  }
+
+  .splide__container .splide__list .country_image img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+.splide__slide img {
+  transform: scale(0.6);
+}
+
+/* Active slide */
+.splide__slide.is-active img {
+  transform: scale(1);
+  padding: 2px;
+  outline: 1px solid rgb(72, 144, 239);
+}
+
+/* Previous and Next slides */
+.splide__slide.is-prev img,
+.splide__slide.is-next img {
+  transform: scale(0.8);
+}
+
+
+
+/* model box styling */
+.ReactModal__Overlay {
+  background-color: rgba(11, 10, 18, 0.5) !important;
+}
+
+@media (min-width: 768px) {
+  .ReactModal__Overlay {
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 300ms ease-in-out;
+  }
+
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.ReactModalPortal .ReactModal__Overlay .ReactModal__Content {
+  margin-inline: auto;
+  width: 500px;
+  background: rgba(6, 6, 6, 0.5) !important;
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 20px !important;
+  border: 1px solid rgba(159, 151, 151, 0.18) !important;
+  box-shadow: inset 2px 2px 15px rgba(79, 75, 75, 0.5),
+    inset -2px -2px 15px rgba(133, 123, 123, 0.18);
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.modal_box_container {
+  padding: 10px;
+}
+
+.theme_selector {
+  border-radius: 50px;
+  height: 65px;
+  width: 70%;
+  background: linear-gradient(155deg, rgba(30, 32, 33, 0.50) 0%, rgba(32, 33, 36, 0.50) 100%), radial-gradient(76.03% 76.03% at 24.00% 18.00%, rgba(55, 56, 61, 0.50) 0%, rgba(31, 32, 35, 0.50) 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.theme_selector span {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: radial-gradient(76.03% 76.03% at 24.00% 18.00%, rgba(84, 86, 89, 0.50) 0%, rgba(35, 38, 41, 0.50) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.theme_selector span.active {
+  outline: 1px solid #6B48FF;
+}
+
+
+@media (max-width: 767px) {
+  .ReactModalPortal .ReactModal__Overlay .ReactModal__Content {
+    width: 100dvw;
+    height: 600px;
+    top: 82% !important;
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 50px !important;
+    border: 1px solid rgba(159, 151, 151, 0.18) !important;
+    box-shadow: inset 10px 10px 25px rgba(149, 146, 146, 0.5);
+  }
+
+  .modal_box_container {
+    margin: 10px auto;
+  }
+
+  .ReactModal__Content {
+    animation-name: ding;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+  }
+
+}
+
+
+@keyframes ding {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+
+  to {
+    opacity: 100%;
+    height: 600px;
+  }
+}

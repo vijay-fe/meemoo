@@ -1,80 +1,80 @@
-[
+export const data = [
     {
         "id": "1",
         "name": "India",
-        "image": "./flags/india.webp",
+        "image": "India.webp",
         "language": "Hindi"
     },
     {
         "id": "2",
         "name": "Albania",
-        "image": "./flags/albania.png",
+        "image": "albania.png",
         "language": "Albanian"
     },
     {
         "id": "3",
         "name": "Austria",
-        "image": "./flags/austria.png",
+        "image": "austria.png",
         "language": "German"
     },
     {
         "id": "4",
         "name": "Bangladesh",
-        "image": "./flags/bangladesh.png",
+        "image": "bangladesh.png",
         "language": "Bengali"
     },
     {
         "id": "5",
         "name": "Brazil",
-        "image": "./flags/brazil.webp",
+        "image": "brazil.webp",
         "language": "Portuguese"
     },
     {
         "id": "6",
         "name": "China",
-        "image": "./flags/china.webp",
+        "image": "china.webp",
         "language": "Chinese"
     },
     {
         "id": "7",
         "name": "Ezypt",
-        "image": "./flags/egipt.webp",
+        "image": "egipt.webp",
         "language": "Arabic"
     },
     {
         "id": "8",
         "name": "Germany",
-        "image": "./flags/germany.webp",
+        "image": "germany.webp",
         "language": "German"
     },
     {
         "id": "9",
         "name": "Hong-Kong",
-        "image": "./flags/hong-kong.webp",
+        "image": "hong-kong.webp",
         "language": "Chinese"
     },
     {
         "id": "10",
         "name": "Iran",
-        "image": "./flags/iran.webp",
+        "image": "iran.webp",
         "language": "Persian"
     },
     {
         "id": "11",
         "name": "Israel",
-        "image": "./flags/israel.webp",
+        "image": "israel.webp",
         "language": "Hebrew"
     },
     {
         "id": "12",
         "name": "Italy",
-        "image": "./flags/italy.png",
+        "image": "italy.png",
         "language": "Italian"
     },
     {
         "id": "13",
         "name": "Japan",
-        "image": "./flags/japan.webp",
+        "image": "japan.webp",
         "language": "Japanese"
     }
 ]

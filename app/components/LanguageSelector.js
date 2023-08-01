@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import data from "/public/flagsData.json";
+import { data } from "../data/flagsData";
 import Image from "next/image";
 import "@splidejs/react-splide/css";
 
@@ -54,7 +54,7 @@ export default function LanguageSelector() {
                         return (
                             <SplideSlide key={country.id} className="py-2" data-country-name={country.name}>
                                 <div className="country_image">
-                                    <Image src={`/${country.image}`} alt={country.name} width={100} height={100} />
+                                    <Image src={require(`../assets/flags/${country.image}`)} alt={country.name} width={100} height={100} />
                                 </div>
                             </SplideSlide>
                         );

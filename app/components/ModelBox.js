@@ -3,8 +3,7 @@ import React, { useEffect, useRef, useState } from "react"
 import Modal from "react-modal";
 import close from "/public/svg/close.svg"
 import Image from "next/image";
-// import { AiOutlineCloseCircle } from "react-icons/ai"
-// Modal.setAppElement("#root");
+
 
 function ModalBox({ children, dOpen, dClose, isClosable, small }) {
     const [customStyles, setCustomStyles] = useState({})
@@ -22,9 +21,6 @@ function ModalBox({ children, dOpen, dClose, isClosable, small }) {
                     right: '2%',
                     bottom: 'auto',
                     borderRadius: "15px",
-                    // overflow: "hidden",
-                    // marginRight: '-50%',
-                    //transform: 'translate(-50%, -50%)',
                     padding: "0px",
                 },
             };
@@ -36,8 +32,6 @@ function ModalBox({ children, dOpen, dClose, isClosable, small }) {
                     right: 'auto',
                     bottom: 'auto',
                     borderRadius: "30px",
-                    // overflow: "hidden",
-                    // marginRight: '-50%',
                     transform: 'translate(-50%, -50%)',
                     padding: "0px",
                 },

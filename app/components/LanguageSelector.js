@@ -34,7 +34,6 @@ export default function LanguageSelector() {
     return (
         <>
             <Splide
-                // hasTrack={false}
                 options={{
                     type: "loop",
                     autoWidth: true,
